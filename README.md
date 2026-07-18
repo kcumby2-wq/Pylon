@@ -4,6 +4,8 @@
 **Partner:** Pylon Football (pylonfootball.com)
 **Contract shape:** Pylon contracts TOJ (not Kyron W-2)
 **Scope:** Tech + Sales + Scouting + Media — four operational functions delivered by TOJ, all contracted through Kyron
+**Coverage:** National — all 5 Pylon territorial regionals (NE · SE · MW · SC · W) + international (Pylon Japan Mar 2027 pilot)
+**Kyron's physical presence:** Dallas + West Coast (Portland base 2026–27, Seattle secondary) → NYC/Queens 2028+
 
 This repo is the **living reference archive** of the Pylon × TOJ partnership build spec. It is not the code repo — the code lands in `kcumby2-wq/TojCampaign` on branch `claude/pylon-partnership-2026` (per V2 handoff). This repo holds the layered decision docs.
 
@@ -26,10 +28,13 @@ Pylon Football has mature infrastructure — Sports Thread runs their rankings, 
 
 **Year-1 TOJ take estimate: $700K–$1.2M** across all lines. Plus recurring newsletter revenue.
 
-## Content operations (V2.5 layer)
+## Content operations (V2.5 layer, extended in V3.0)
 
 - 4 content pillars owned by TOJ system, staffed by Pylon pod: Ritual (Sunday Salvo, Power Rankings Show, Family Night Live) · Scale (AI Season Recaps, Extended Rankings, matchup previews, Play of the Week) · Prestige (Pylon Path docu-series, Live Draft broadcasts, Coach Corner, podcast) · Capture (Off-Season Signal newsletter, Parent Playbook, Ambassador program, Rivals Killer news)
 - Content Pod org: Creative Lead (Pylon employee) → Head of Video / Head of Editorial / Head of Social / Head of Automation-Ops / Girls Flag Lead + rotating Subject Media contract crew
+- **Efficiency layer (V3.0):** 5 Regional Coordinators — one per US regional (West Q1'26 → South Central Q1'26 → Northeast Q2'26 → Southeast Q3'26 → Midwest Q4'26 or Q1'27 defer) + international contract for Pylon Japan
+- **Year-1 pod headcount: 11** (6 Creative + 5 Regional Coordinators) — was 6 in V2.5
+- **Year-1 fully-loaded pod cost: $950K–$1.4M** (was $500K–$700K in V2.5) — break-even shifts month 6 → month 8–10
 - Sponsor commission on content assets: ~$194K/year TOJ take at 25% of estimated $777K gross
 
 ## Media methodology (V2.8 layer)
@@ -62,7 +67,7 @@ Pylon Football has mature infrastructure — Sports Thread runs their rankings, 
 
 ## Status
 
-Handoff spec locked through V2.9 (2026-07-18). Execution has not begun on `claude/pylon-partnership-2026`. Open questions: 30 across all layers — full list in the handoff index.
+Handoff spec locked through **V3.0** (2026-07-18). Execution has not begun on `claude/pylon-partnership-2026`. Open questions: **34 across all layers · 30 effectively open** after V2.9 supersedes 3 of V2.8's — full list in the handoff index.
 
 ---
 

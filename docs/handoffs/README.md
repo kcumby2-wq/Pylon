@@ -1,6 +1,6 @@
 # Pylon × TOJ Handoff Spec — Layered Index
 
-**Total layers to date:** 5 (V2 → V2.5 → V2.7 → V2.8 → V2.9)
+**Total layers to date:** 6 (V2 → V2.5 → V2.7 → V2.8 → V2.9 → V3.0)
 **Superseded:** V1 (see `_archived/`)
 **Last updated:** 2026-07-18
 
@@ -110,7 +110,31 @@ Every layer is written for a Claude Code session with GitHub write access to `kc
 
 ---
 
-## Total open questions across all layers: 30
+### [`v3.0-national-coverage.md`](v3.0-national-coverage.md) · National coverage + Regional Coordinators · 12KB
+
+**Locked:**
+- **National coverage across all 5 Pylon territorial regionals** (Northeast · Southeast · Midwest · South Central · West) + international (Pylon Japan Mar 2027 pilot). **Replaces any prior "3-territory" framing.**
+- **Kyron's physical operating presence:** Dallas + West Coast (Portland base 2026–2027, Seattle secondary) for the initial term; NYC/Queens relocation 2028+ aligned to his St John's transition
+- **Pilot event stays anchored in Dallas** (South Central Regional stop, spring 2027) — TAPPS pathway warm, Hooks-adjacent, deepest talent pool
+- **5 Regional Coordinators required** — hired in sequence based on where Kyron is physically present:
+  1. West (Portland) — Q1 2026, colocated with Kyron for onboarding
+  2. South Central (Dallas) — Q1 2026, colocated during Dallas swings
+  3. Northeast (Philly/NY) — Q2 2026, remote until 2028 relocation
+  4. Southeast (Atlanta/Tampa) — Q3 2026, remote + Subject Media contract crew support
+  5. Midwest (Chicago/Indianapolis) — Q4 2026 OR defer to Q1 2027 based on cash flow
+  6. International (Tokyo) — contract-only for Pylon Japan; permanent hire dependent on expansion volume
+- Regional Coordinators are **TOJ contractors, not Pylon employees** (preserves TOJ IP portability across future partnerships)
+- **Year-1 pod headcount = 11 total** (was 6 in V2.5, then 9, now 11): 6 Creative pod + 5 Regional Coordinators
+- **Year-1 fully-loaded pod cost = $950K–$1.4M** (was $500K–$700K in V2.5) — break-even shifts from month 6 → month 8–10
+- 8 Partnership Memo patches (M1–M8) covering scope statement, operating presence section, domain amendments, hire-sequence timeline, approval-gate updates, exit clause protection
+- 3 new pylon-os skills: `regional-coordinator/`, `coverage-parity/`, `travel-triage/`
+- `skills/tapps-pathway/` amended — South Central Coordinator (Dallas) becomes operational owner after Kyron's Optimum pitch
+
+**Open questions from V3.0:** 4.
+
+---
+
+## Total open questions across all layers: 34
 
 Rolled up from all 5 layers. Answer these to unblock the build.
 
@@ -159,7 +183,14 @@ Rolled up from all 5 layers. Answer these to unblock the build.
 29. **Pylon site typography** — exact display face on `pylonfootball.com` for design match
 30. **Dedicated seller comp structure** — $500/event base confirm or override?
 
-**Effectively-open questions after V2.9 supersedes:** 26 (questions 23, 24, 28 answered in V2.9).
+### From V3.0 (4):
+
+31. **Midwest Coordinator timing** — Q4 2026 hire or Q1 2027 defer? Kyron confirms based on year-1 cash flow visibility around Q3 2026.
+32. **International Coordinator (Tokyo)** — Pylon Japan Mar 2027 event only, or start scoping permanent hire in Q3 2026 in anticipation of broader international expansion (Europe, LATAM)?
+33. **Regional Coordinator compensation structure** — proposal: $70K–$100K base + 5% of Coordinator's-territory-attributable revenue. Confirm or adjust.
+34. **Nike Portland pitch** — do you want the pitch memo drafted for a walk-in meeting after you're settled in Portland?
+
+**Effectively-open questions after V2.9 supersedes:** 30 (questions 23, 24, 28 answered in V2.9).
 
 ---
 
