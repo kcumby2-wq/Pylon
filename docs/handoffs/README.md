@@ -1,6 +1,6 @@
 # Pylon × TOJ Handoff Spec — Layered Index
 
-**Total layers to date:** 6 (V2 → V2.5 → V2.7 → V2.8 → V2.9 → V3.0)
+**Total layers to date:** 7 (V2 → V2.5 → V2.7 → V2.8 → V2.9 → V3.0 → V3.1)
 **Superseded:** V1 (see `_archived/`)
 **Last updated:** 2026-07-18
 
@@ -134,7 +134,34 @@ Every layer is written for a Claude Code session with GitHub write access to `kc
 
 ---
 
-## Total open questions across all layers: 34
+### [`v3.1-creative-expansion.md`](v3.1-creative-expansion.md) · Creative expansion + strategic deep-dive · ~20KB
+
+**Locked (Kyron's 5 additions):**
+- **CE-1 · Pylon AI Coach (SKU #15)** — AI coach assistant $99/mo or $999/season · TOJ 60/Pylon 40 · Year-1 ~$120K TOJ take · **Kyron's AI school portfolio product earning real money**
+- **CE-2 · Pylon Momentum Score** — proprietary longitudinal athlete metric embedded in SKUs #9, #1c, #11, #15 · **the data moat that makes everything else defensible**
+- **CE-3 · Pylon Signature Series (SKU #16)** — narrative short films 5-15 min · $75K-$150K per-episode sponsor OR $750K-$1.5M season presenting · TOJ 25% · Year-1 ~$200K TOJ take · **differentiator vs Overtime**
+- **CE-4 · Pylon City League Franchise Ownership Fund** — structural (not SKU) · TOJ owns 2 franchises Year 1, 8 by Year 3 · ~$100-300K/franchise/year revenue · solves capital-efficiency of City League expansion
+- **CE-5 · Pylon × HBCU Pipeline (SKU #17)** — HBCU Recruiting Concierge $149/mo or $749/season + HBCU Showcase events + HBCU Signature Series episodes · Year-1 ~$345K TOJ take · **cultural moat + Nike/State Farm/Coca-Cola sponsor angle**
+
+**Proposed (Claude's 4 additions · require Kyron greenlight):**
+- **CE-6 · Pylon AI Highlight Reel (SKU #18 candidate)** — HIGH priority · AI-produced highlight subscription $29-$99/season/athlete · Year-1 ~$190K-$272K TOJ take · **unlocks the 117K athlete base at scale**
+- **CE-7 · Pylon Alumni Network + Investment Circle (SKU #19 candidate)** — HIGH priority · alumni membership + mentorship + investment circle · Year-1 ~$220K TOJ take · **cultural moat Overtime doesn't have**
+- **CE-8 · Pylon Data Feed B2B (SKU #20 candidate)** — MEDIUM-HIGH priority · licensed data to broadcasters/gaming/colleges · Year-1 ~$225K TOJ take · **highest-margin proposed addition, Elias Sports Bureau for youth football**
+- **CE-9 · The Pylon Book annual yearbook (SKU #21 candidate)** — MEDIUM priority · $99 physical + digital · Year-1 ~$118K TOJ take · print-on-demand fulfillment
+
+**Strategic deep-dive framing:**
+- 3 moats being built simultaneously (Data · Cultural · Operational)
+- Year 1 → Year 5 trajectory: from Pylon partnership to national youth-sports operating OS
+- What TOJ owns at Year 3: dataset, operator brain, Coordinator crew, licensed IP portfolio, alumni network access, case-study evidence
+- Optionality: 2nd sport partnership Year 3, B2B data feed Year 4, horizontal AI Coach expansion Year 4
+
+**Year-1 revenue math if all 9 additions active:** ~$2.9M-$4.0M TOJ take (vs V3.0's $1.1M-$2.4M) · pod cost unchanged $950K-$1.4M · **net margin $1.5M-$2.6M**
+
+**Open questions from V3.1:** 7 (4 for greenlight decisions + 3 structural).
+
+---
+
+## Total open questions across all layers: 41
 
 Rolled up from all 5 layers. Answer these to unblock the build.
 
@@ -187,10 +214,20 @@ Rolled up from all 5 layers. Answer these to unblock the build.
 
 31. **Midwest Coordinator timing** — Q4 2026 hire or Q1 2027 defer? Kyron confirms based on year-1 cash flow visibility around Q3 2026.
 32. **International Coordinator (Tokyo)** — Pylon Japan Mar 2027 event only, or start scoping permanent hire in Q3 2026 in anticipation of broader international expansion (Europe, LATAM)?
-33. **Regional Coordinator compensation structure** — proposal: $70K–$100K base + 5% of Coordinator's-territory-attributable revenue. Confirm or adjust.
+33. **Regional Coordinator compensation structure** — retainer + performance-based commission tied to Pylon-revenue + owner-time-saved metrics · specifics set with CEO. *(**Answered by Kyron 2026-07-18** — shape locked, numbers set jointly with Pylon CEO before Q1 2026 hires. Reflected in Memo §8.)*
 34. **Nike Portland pitch** — do you want the pitch memo drafted for a walk-in meeting after you're settled in Portland?
 
-**Effectively-open questions after V2.9 supersedes:** 30 (questions 23, 24, 28 answered in V2.9).
+### From V3.1 (7):
+
+35. **CE-6 AI Highlight Reel** — greenlit as Year-1 SKU #18?
+36. **CE-7 Alumni Network** — greenlit as Year-1 SKU #19?
+37. **CE-8 B2B Data Feed** — greenlit as Year-1 SKU #20?
+38. **CE-9 Pylon Book** — greenlit as Year-1 SKU #21, or defer to Year 2?
+39. **CE-4 City League Ownership Fund** — TOJ raises independently OR partners with existing fund?
+40. **CE-5 HBCU sponsor call priority** — confirm Nike Portland → State Farm → Coca-Cola order?
+41. **CE-2 Momentum Score public launch** — quiet (embedded first) or loud (dedicated landing page + PR)?
+
+**Effectively-open questions after V2.9 supersedes + V3.0 Q33 answered:** 36 (questions 23, 24, 28 answered in V2.9; Q33 answered 2026-07-18).
 
 ---
 
