@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOJ Operational Transcript&trade; — Pylon 7on7 Football</title>
+  <meta name="description" content="A TOJ Operational Transcript for Pylon 7on7 Football. Five pillars scored, evidenced, and gapped — with the one cross-pillar move that separates 2026 from every other 7v7 organization in the country." />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#F5F1EA" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="20" fill="%231E3A5F"/><text x="50" y="66" font-family="Georgia" font-size="52" font-weight="600" fill="%23B8843B" text-anchor="middle">T</text></svg>' />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    :root {
+      --parchment: #F5F1EA; --parchment-2: #EBE4D6; --paper: #FFFFFF;
+      --ink: #1A1613; --ink-soft: #3B3530; --ink-mute: #6E655C;
+      --rule: rgba(26,22,19,0.12);
+      --navy: #1E3A5F; --gold: #B8843B; --gold-soft: rgba(184,132,59,0.14);
+      --green: #2F5D4E; --crimson: #9B3D2E;
+      --mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+    }
+    body { font-family: 'Inter', -apple-system, sans-serif; background: var(--parchment); color: var(--ink); line-height: 1.62; -webkit-font-smoothing: antialiased; }
+    h1, h2, h3, h4 { font-family: 'Fraunces', Georgia, serif; font-weight: 600; letter-spacing: -0.015em; color: var(--ink); }
+    a { color: var(--navy); }
+
+    .doc-wrap { max-width: 920px; margin: 0 auto; padding: clamp(1.75rem, 5vw, 4rem) clamp(1.15rem, 3vw, 3rem); background: var(--paper); box-shadow: 0 40px 90px -55px rgba(26,22,19,0.35); min-height: 100vh; border-left: 6px solid var(--navy); }
+
+    /* Masthead */
+    .masthead { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; padding-bottom: 0.9rem; border-bottom: 2px solid var(--ink); }
+    .mast-brand { font-family: var(--mono); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); display: inline-flex; align-items: center; gap: 0.5rem; }
+    .mast-brand .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--crimson); display: inline-block; }
+    .mast-brand .tm { color: var(--ink-mute); font-weight: 500; }
+    .mast-meta { font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.12em; color: var(--ink-mute); text-align: right; text-transform: uppercase; line-height: 1.7; }
+    .mast-delivery { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-mute); margin-top: 0.5rem; }
+    .mast-delivery span { color: var(--gold); font-weight: 700; }
+
+    /* Title block */
+    .title-block { padding: 2rem 0 1.5rem; border-bottom: 1px solid var(--rule); }
+    .eyebrow { font-family: var(--mono); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+    .title-block h1 { font-size: clamp(2.6rem, 8vw, 5rem); line-height: 0.94; letter-spacing: -0.03em; text-transform: uppercase; }
+    .title-block .lede { font-family: 'Fraunces', Georgia, serif; font-size: clamp(1.05rem, 2.4vw, 1.3rem); font-weight: 400; color: var(--ink-soft); line-height: 1.45; margin-top: 1.15rem; max-width: 46ch; }
+    .subject-row { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 1.5rem; font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-mute); }
+    .subject-row b { color: var(--ink); font-weight: 700; }
+
+    .scoping { background: var(--gold-soft); border-left: 3px solid var(--gold); padding: 0.85rem 1.1rem; margin: 1.75rem 0 0; font-size: 0.82rem; color: var(--ink-soft); border-radius: 4px; }
+    .scoping strong { color: var(--ink); }
+
+    /* Sections */
+    section { padding: 2.6rem 0; border-bottom: 1px solid var(--rule); }
+    section:last-of-type { border-bottom: 0; }
+    .sec-num { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 0.5rem; }
+    .sec-num b { color: var(--gold); font-weight: 700; }
+    section > h2 { font-size: clamp(1.7rem, 4vw, 2.3rem); line-height: 1.03; margin-bottom: 1.1rem; }
+    section p { color: var(--ink-soft); margin-bottom: 1rem; font-size: 0.96rem; }
+    section p:last-child { margin-bottom: 0; }
+    p b, section strong { color: var(--ink); }
+    .quote-inline { font-style: italic; color: var(--navy); }
+
+    /* Exec summary */
+    .exec { background: var(--parchment-2); border-radius: 8px; padding: 1.5rem 1.5rem; margin-bottom: 1.25rem; }
+    .exec p { font-family: 'Fraunces', Georgia, serif; font-size: 1.05rem; color: var(--ink); line-height: 1.5; }
+    .exec .big { color: var(--gold); }
+    .decision-box { border: 1.5px solid var(--gold); background: var(--paper); border-radius: 8px; padding: 1.15rem 1.35rem; margin-top: 1.25rem; }
+    .decision-box .tag { font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); font-weight: 700; display: block; margin-bottom: 0.5rem; }
+    .decision-box p { color: var(--ink-soft); font-size: 0.92rem; }
+    .decision-box p:last-child { margin-bottom: 0; }
+    .decision-box .first-fix { color: var(--crimson); font-weight: 600; }
+
+    /* Stat strip */
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 0.7rem; margin: 1.5rem 0 0; }
+    .stat { background: var(--parchment-2); padding: 0.85rem 1rem; border-radius: 6px; border-left: 3px solid var(--gold); }
+    .stat .n { display: block; font-family: 'Fraunces', serif; font-size: 1.55rem; font-weight: 600; color: var(--ink); line-height: 1.05; }
+    .stat .l { display: block; font-family: var(--mono); font-size: 0.6rem; color: var(--ink-mute); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 0.3rem; }
+
+    /* Radar + legend */
+    .radar-wrap { display: grid; grid-template-columns: 1fr 1.05fr; gap: 2rem; align-items: center; margin: 1.5rem 0 0; }
+    @media (max-width: 720px) { .radar-wrap { grid-template-columns: 1fr; } }
+    .radar-svg { width: 100%; max-width: 330px; margin: 0 auto; display: block; }
+    .radar-legend { display: flex; flex-direction: column; gap: 0.5rem; }
+    .radar-legend .row { display: grid; grid-template-columns: 1.4rem 1fr auto auto; gap: 0.7rem; align-items: center; padding: 0.5rem 0.75rem; background: var(--parchment-2); border-radius: 6px; font-size: 0.86rem; }
+    .radar-legend .row.weakest { background: rgba(155,61,46,0.1); border: 1px solid rgba(155,61,46,0.3); }
+    .radar-legend .row .pn { font-family: var(--mono); font-size: 0.66rem; color: var(--ink-mute); }
+    .radar-legend .row .name { font-weight: 600; color: var(--ink); }
+    .radar-legend .row .score { font-family: var(--mono); color: var(--navy); font-weight: 700; font-size: 0.8rem; }
+    .radar-legend .row.weakest .score { color: var(--crimson); }
+    .radar-legend .row .grade { font-family: 'Fraunces', serif; font-weight: 700; font-size: 0.9rem; }
+    .radar-legend .row .grade.b { color: var(--green); }
+    .radar-legend .row .grade.c { color: var(--gold); }
+    .radar-legend .row .grade.d { color: var(--crimson); }
+    .total-row { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-mute); text-align: right; margin-top: 0.75rem; }
+    .total-row b { color: var(--ink); }
+
+    /* Pillar cards */
+    .pillar { border: 1px solid var(--rule); border-radius: 10px; padding: 1.35rem 1.4rem; margin-top: 1.5rem; background: var(--paper); }
+    .pillar.weakest { border-color: rgba(155,61,46,0.4); border-left: 5px solid var(--crimson); background: linear-gradient(180deg, rgba(155,61,46,0.035), var(--paper)); }
+    .pillar-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; border-bottom: 1px solid var(--rule); padding-bottom: 0.75rem; margin-bottom: 1rem; }
+    .pillar-head .ph-left { display: flex; flex-direction: column; }
+    .pillar-head .ph-num { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mute); }
+    .pillar-head h3 { font-size: 1.35rem; line-height: 1.05; }
+    .pillar-head .ph-score { font-family: 'Fraunces', serif; font-size: 2.4rem; font-weight: 600; color: var(--navy); line-height: 0.9; }
+    .pillar.weakest .ph-score { color: var(--crimson); }
+    .pillar-head .ph-score small { font-family: var(--mono); font-size: 0.62rem; font-weight: 500; color: var(--ink-mute); letter-spacing: 0.08em; display: block; text-align: right; }
+    .weakest-flag { font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--crimson); font-weight: 700; margin-top: 0.2rem; }
+    .eg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+    @media (max-width: 640px) { .eg-grid { grid-template-columns: 1fr; gap: 0.9rem; } }
+    .eg-col h4 { font-family: var(--mono); font-size: 0.64rem; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 0.5rem; }
+    .eg-col.ev h4 { color: var(--green); }
+    .eg-col.gap h4 { color: var(--crimson); }
+    .eg-col ul { list-style: none; }
+    .eg-col li { font-size: 0.85rem; color: var(--ink-soft); padding-left: 0.95rem; position: relative; margin-bottom: 0.55rem; line-height: 1.45; }
+    .eg-col li::before { content: '—'; position: absolute; left: 0; color: var(--ink-mute); }
+    .move { margin-top: 1.1rem; padding: 0.85rem 1rem; background: var(--parchment); border-radius: 6px; border-left: 3px solid var(--gold); }
+    .move .mtag { font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
+    .move p { font-size: 0.85rem; margin: 0.35rem 0 0; color: var(--ink-soft); }
+    .move .signal { display: block; margin-top: 0.5rem; font-size: 0.8rem; color: var(--ink-mute); }
+    .move .signal b { color: var(--green); font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; }
+
+    /* Weakest deep-dive */
+    .dd-block { margin-top: 1.25rem; }
+    .dd-block h4 { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink); margin-bottom: 0.4rem; }
+    .dd-block h4.miss { color: var(--crimson); }
+
+    /* Cross-pillar products */
+    .prod { border: 1px solid var(--rule); border-left: 4px solid var(--navy); border-radius: 8px; padding: 1.1rem 1.25rem; margin-top: 1rem; }
+    .prod .pnum { font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.14em; color: var(--gold); font-weight: 700; }
+    .prod h3 { font-size: 1.2rem; margin: 0.15rem 0 0.4rem; }
+    .prod p { font-size: 0.88rem; margin-bottom: 0.6rem; }
+    .prod .fixes { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--navy); font-weight: 500; }
+    .separator-note { margin-top: 1.5rem; padding: 1.1rem 1.25rem; background: var(--navy); color: #EBE4D6; border-radius: 8px; }
+    .separator-note h4 { color: var(--paper); font-family: 'Fraunces', serif; font-size: 1.05rem; margin-bottom: 0.5rem; text-transform: none; letter-spacing: -0.01em; }
+    .separator-note p { color: rgba(235,228,214,0.85); font-size: 0.88rem; margin-bottom: 0; }
+    .separator-note .diff { font-family: var(--mono); font-size: 0.64rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); font-weight: 700; display: block; margin-top: 0.75rem; }
+
+    /* Ship list */
+    .ship-intro { font-size: 0.92rem; color: var(--ink-soft); margin-bottom: 1.25rem; }
+    .ship { display: grid; grid-template-columns: 2.2rem 1fr; gap: 1rem; padding: 1.1rem 0; border-bottom: 1px solid var(--rule); }
+    .ship:last-child { border-bottom: 0; }
+    .ship .snum { font-family: 'Fraunces', serif; font-size: 1.75rem; font-weight: 600; color: var(--gold); line-height: 1; }
+    .ship .sbody strong { color: var(--ink); font-size: 0.98rem; }
+    .ship .sbody p { font-size: 0.85rem; color: var(--ink-mute); margin: 0.3rem 0 0.6rem; }
+    .ship .smeta { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .ship .chip { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.06em; padding: 0.28rem 0.55rem; border-radius: 4px; background: var(--parchment-2); color: var(--ink-soft); }
+    .ship .chip.owner { border: 1px solid var(--rule); }
+    .ship .chip.done { background: var(--gold-soft); color: #7a5620; font-weight: 500; }
+
+    /* Horizon table */
+    .tr-table { width: 100%; border-collapse: collapse; margin-top: 1.25rem; font-size: 0.86rem; }
+    .tr-table th { text-align: left; background: var(--parchment-2); padding: 0.65rem 0.85rem; font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); font-weight: 700; border-bottom: 1px solid var(--rule); }
+    .tr-table td { padding: 0.75rem 0.85rem; color: var(--ink-soft); border-bottom: 1px solid var(--rule); vertical-align: top; }
+    .tr-table td.wk { font-family: var(--mono); font-weight: 700; color: var(--gold); font-size: 0.8rem; white-space: nowrap; }
+    .tr-table td.pl { font-weight: 600; color: var(--ink); white-space: nowrap; }
+    @media (max-width: 640px) { .tr-table td.pl { white-space: normal; } }
+
+    .close-box { margin-top: 1.5rem; }
+    .close-box .first-fix { border-left: 4px solid var(--crimson); padding: 0.75rem 1rem; background: rgba(155,61,46,0.05); border-radius: 4px; margin-bottom: 1rem; }
+    .close-box .worked { border-left: 4px solid var(--green); padding: 0.75rem 1rem; background: rgba(47,93,78,0.06); border-radius: 4px; }
+    .close-box h4 { font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 0.4rem; }
+    .close-box .first-fix h4 { color: var(--crimson); }
+    .close-box .worked h4 { color: var(--green); }
+    .kicker { font-family: 'Fraunces', serif; font-size: 1.35rem; font-weight: 600; color: var(--ink); text-align: center; margin: 2rem 0 0; line-height: 1.25; }
+
+    .doc-footer { margin-top: 2.5rem; padding-top: 1.25rem; border-top: 2px solid var(--ink); font-size: 0.72rem; color: var(--ink-mute); line-height: 1.6; }
+    .doc-footer .fnote { font-style: italic; margin-top: 0.5rem; }
+
+    @media print {
+      body { background: #fff; }
+      .doc-wrap { box-shadow: none; border-left: 4px solid var(--navy); max-width: 100%; }
+      .pillar, .prod, .ship { break-inside: avoid; }
+      section { break-inside: avoid-page; }
+    }
+  </style>
+</head>
+<body>
+  <article class="doc-wrap">
+
+    <header class="masthead">
+      <div class="mast-brand"><span class="dot"></span>TOJ <span class="tm">Operational Transcript&trade;</span></div>
+      <div class="mast-meta">
+        <div>Report ID · OT-AU-0721</div>
+        <div>Vertical · Authority</div>
+        <div>Issued · 2026-07-21 · Season 2026&ndash;27</div>
+      </div>
+    </header>
+    <div class="mast-delivery">Delivered <span>within 72 business hours</span> of intake &middot; Prepared by Kyron Cumby &middot; Trail of Joy Management Group, LLC</div>
+
+    <div class="title-block">
+      <div class="eyebrow">Diagnostic to Decision &middot; Q3 2026</div>
+      <h1>Pylon 7on7 Football.</h1>
+      <p class="lede">A pillar-by-pillar read of what slowed 2025, the one asset that fixes two pillars at once, and the six-week move that separates 2026 from every other 7v7 organization in the country.</p>
+      <div class="subject-row">
+        <span>Subject &middot; <b>Pylon Football</b></span>
+        <span>pylonfootball.com</span>
+        <span>7on7 event organization &middot; <b>19 years</b></span>
+      </div>
+      <div class="scoping">
+        <strong>Scoping note.</strong> Scores below are built on externally observable evidence as of July 2026 &mdash; the public site, the published event calendar, competitor comparisons, and alumni-tracking records. Full intake with internal data access would refine each pillar by roughly &plusmn;10 points. This is an Authority-vertical transcript: the subject is an organization building a career-long institution, not a single operator.
+      </div>
+    </div>
+
+    <!-- 01 -->
+    <section>
+      <div class="sec-num">Section <b>01</b> &middot; Executive summary</div>
+      <h2>One page. One decision.</h2>
+      <div class="exec">
+        <p>Pylon owns the deepest pipeline receipt in 7v7 football. <span class="big">500+ NFL alumni. 4,000+ Division I commits. Nineteen years on the field.</span> No competitor can replicate that graph.</p>
+      </div>
+      <p>Red Zone Elite has four years. 7v7 Elite has a national ranking layer. PremierEventsUSA has a player-card partnership. Midwest BOOM has an apparel sponsor. None of them have the alumni.</p>
+      <p>The 2025 season lost ground because Pylon competed on the layer where competitors have caught up &mdash; tournament count, venue prestige, tech infrastructure &mdash; instead of the layer only Pylon can own. The site's own reset language telegraphs it: <span class="quote-inline">&ldquo;We didn't follow the blueprint &mdash; we wrote it. Now we're tearing it up and rewriting it again.&rdquo;</span> That is an organization narrating a pivot without a visible plan.</p>
+      <div class="decision-box">
+        <span class="tag">The move &middot; Q3&ndash;Q4 2026</span>
+        <p><b>Publish the alumni graph.</b> The Pylon Wall (searchable database of every athlete who came through 19 years of Pylon), the annual State of the Pipeline report, and the Alumni Membership tier. One asset. Two pillars fixed at once &mdash; Revenue Architecture and Content &amp; Credibility. A story no other 7v7 organization in the country can tell.</p>
+        <p class="first-fix">The one thing to fix first: Revenue Architecture (48/100 &mdash; the weakest pillar). The alumni graph is how you fix it without building anything a competitor can copy.</p>
+      </div>
+      <div class="stat-grid">
+        <div class="stat"><span class="n">500+</span><span class="l">NFL alumni</span></div>
+        <div class="stat"><span class="n">4,000+</span><span class="l">D1 commits</span></div>
+        <div class="stat"><span class="n">19 yrs</span><span class="l">On the field</span></div>
+        <div class="stat"><span class="n">5</span><span class="l">Regional territories</span></div>
+        <div class="stat"><span class="n">4,500+</span><span class="l">Alumni contacts &middot; unmonetized</span></div>
+      </div>
+    </section>
+
+    <!-- 02 -->
+    <section>
+      <div class="sec-num">Section <b>02</b> &middot; Foundation Score</div>
+      <h2>Five pillars. Scored, evidenced, gapped.</h2>
+      <p>Every pillar carries a 0&ndash;100 score. Every score above 40 carries retrievable evidence. Gap lines name what is missing to reach 80. Canonical order &mdash; never rearranged.</p>
+
+      <div class="radar-wrap">
+        <svg class="radar-svg" viewBox="-165 -170 330 340" role="img" aria-label="Five-pillar radar for Pylon">
+          <!-- grid rings -->
+          <polygon points="0,-120 114,-37 70,97 -70,97 -114,-37" fill="none" stroke="rgba(26,22,19,0.14)"/>
+          <polygon points="0,-90 86,-28 53,73 -53,73 -86,-28" fill="none" stroke="rgba(26,22,19,0.12)"/>
+          <polygon points="0,-60 57,-19 35,49 -35,49 -57,-19" fill="none" stroke="rgba(26,22,19,0.1)"/>
+          <polygon points="0,-30 28,-9 18,24 -18,24 -28,-9" fill="none" stroke="rgba(26,22,19,0.08)"/>
+          <line x1="0" y1="0" x2="0" y2="-120" stroke="rgba(26,22,19,0.18)"/>
+          <line x1="0" y1="0" x2="114" y2="-37" stroke="rgba(26,22,19,0.18)"/>
+          <line x1="0" y1="0" x2="70" y2="97" stroke="rgba(26,22,19,0.18)"/>
+          <line x1="0" y1="0" x2="-70" y2="97" stroke="rgba(26,22,19,0.18)"/>
+          <line x1="0" y1="0" x2="-114" y2="-37" stroke="rgba(26,22,19,0.18)"/>
+          <!-- data: BI 62, OH 55, CC 68, GR 52, RA 48 (r = score/100*120) -->
+          <polygon points="0,-74.4 75.4,-24.5 44.2,61.2 -43.3,59.9 -54.7,-17.8" fill="rgba(30,58,95,0.22)" stroke="var(--navy)" stroke-width="2"/>
+          <circle cx="0" cy="-74.4" r="4" fill="var(--navy)"/>
+          <circle cx="75.4" cy="-24.5" r="4" fill="var(--navy)"/>
+          <circle cx="44.2" cy="61.2" r="4" fill="var(--navy)"/>
+          <circle cx="-43.3" cy="59.9" r="4" fill="var(--navy)"/>
+          <circle cx="-54.7" cy="-17.8" r="5" fill="var(--crimson)"/>
+          <text x="0" y="-134" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#1A1613">Brand Identity</text>
+          <text x="122" y="-32" text-anchor="start" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#1A1613">Operational Health</text>
+          <text x="76" y="118" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#1A1613">Content &amp; Cred.</text>
+          <text x="-76" y="118" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#1A1613">Growth Readiness</text>
+          <text x="-122" y="-32" text-anchor="end" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#9B3D2E">Revenue Arch.</text>
+        </svg>
+        <div class="radar-legend">
+          <div class="row"><span class="pn">01</span><span class="name">Brand Identity</span><span class="score">62 / 100</span><span class="grade c">C+</span></div>
+          <div class="row"><span class="pn">02</span><span class="name">Operational Health</span><span class="score">55 / 100</span><span class="grade c">C</span></div>
+          <div class="row weakest"><span class="pn">03</span><span class="name">Revenue Architecture</span><span class="score">48 / 100</span><span class="grade d">C&minus;</span></div>
+          <div class="row"><span class="pn">04</span><span class="name">Content &amp; Credibility</span><span class="score">68 / 100</span><span class="grade b">B&minus;</span></div>
+          <div class="row"><span class="pn">05</span><span class="name">Growth Readiness</span><span class="score">52 / 100</span><span class="grade c">C</span></div>
+        </div>
+      </div>
+      <div class="total-row">Total &middot; <b>285 / 500</b> &middot; every pillar in the 40&ndash;69 &ldquo;exists, underperforming&rdquo; band</div>
+
+      <!-- Pillar 01 -->
+      <div class="pillar">
+        <div class="pillar-head">
+          <div class="ph-left"><span class="ph-num">Pillar 01 &middot; Positioning, voice, visual system</span><h3>Brand Identity</h3></div>
+          <div class="ph-score">62<small>/ 100</small></div>
+        </div>
+        <div class="eg-grid">
+          <div class="eg-col ev"><h4>Evidence</h4><ul>
+            <li>Nineteen years of &ldquo;original 7v7 tournament series&rdquo; positioning with credible history.</li>
+            <li>Five-territory footprint (Northeast, Southeast, Midwest, South Central, West).</li>
+            <li>Product lines already extended: 7v7, Girls Flag, Youth Camps, Elite Showcases, NIL Programs.</li>
+          </ul></div>
+          <div class="eg-col gap"><h4>Gap to 80</h4><ul>
+            <li>Site opens with &ldquo;Premier&rdquo; and &ldquo;Elite&rdquo; &mdash; vocabulary every competitor uses; nothing separates the brand at first read.</li>
+            <li>Alumni receipts (500 NFL, 4,000 D1) are buried three scrolls down; they should be the headline.</li>
+            <li>Reset language (&ldquo;tearing it up and rewriting it again&rdquo;) signals unresolved positioning to any parent or coach reading it.</li>
+          </ul></div>
+        </div>
+        <div class="move"><span class="mtag">One-week move</span>
+          <p>Rewrite the homepage hero around a single receipt-line. Test: &ldquo;500 NFL alumni. 4,000 D1 commits. If you played 7v7, you played Pylon.&rdquo; Ban &ldquo;premier&rdquo; and &ldquo;elite&rdquo; for one publishing week.</p>
+          <span class="signal"><b>Success signal</b> &mdash; a parent who has never heard of Pylon can describe what it is, in one sentence, after five seconds on the homepage.</span>
+        </div>
+      </div>
+
+      <!-- Pillar 02 -->
+      <div class="pillar">
+        <div class="pillar-head">
+          <div class="ph-left"><span class="ph-num">Pillar 02 &middot; Team structure, rhythm, workflow</span><h3>Operational Health</h3></div>
+          <div class="ph-score">55<small>/ 100</small></div>
+        </div>
+        <div class="eg-grid">
+          <div class="eg-col ev"><h4>Evidence</h4><ul>
+            <li>Five regional territory pages are live and publishing event calendars.</li>
+            <li>Multiple product lines running in parallel across the calendar year.</li>
+            <li>Registration flows working across regions with roster deadlines enforced.</li>
+          </ul></div>
+          <div class="eg-col gap"><h4>Gap to 80</h4><ul>
+            <li>No visible operational rhythm &mdash; no morning brief pattern, no Friday close-out, no per-region weekly scorecard.</li>
+            <li>Regional territory outputs vary widely; no sign of a central content-ops function coordinating across them.</li>
+            <li>Expansion into girls flag, camps, and NIL is happening in parallel without a visible per-vertical playbook or owner.</li>
+          </ul></div>
+        </div>
+        <div class="move"><span class="mtag">One-week move</span>
+          <p>Install a Monday morning brief per region and a Friday close-out per region, both &le;300 words, routed through a single Chief-of-Staff role. A Retention Watcher flags any region whose output drops 20% week-over-week.</p>
+          <span class="signal"><b>Success signal</b> &mdash; on any Friday, one person can tell you what all five regions shipped that week without making a single phone call.</span>
+        </div>
+      </div>
+
+      <!-- Pillar 03 - weakest -->
+      <div class="pillar weakest">
+        <div class="pillar-head">
+          <div class="ph-left"><span class="ph-num">Pillar 03 &middot; Money model, pricing, flywheel</span><h3>Revenue Architecture</h3><span class="weakest-flag">&#9679; Weakest pillar &mdash; fix first</span></div>
+          <div class="ph-score">48<small>/ 100</small></div>
+        </div>
+        <div class="eg-grid">
+          <div class="eg-col ev"><h4>Evidence</h4><ul>
+            <li>Tournament registration fees and regional league fees are the visible engine.</li>
+            <li>Multiple sponsor and partner mentions appear across the site's regional pages.</li>
+            <li>Product mix (tournaments, camps, showcases, flag, leagues) supports diversified event revenue.</li>
+          </ul></div>
+          <div class="eg-col gap"><h4>Gap to 80</h4><ul>
+            <li>No visible subscription flywheel &mdash; no alumni membership tier, no coach or parent premium tier, no athlete-profile subscription.</li>
+            <li>No published rate card or sponsor package structure; every deal appears to be one-off.</li>
+            <li>4,500+ alumni contacts sit unmonetized &mdash; the highest-value latent asset in the organization.</li>
+            <li>&ldquo;NIL Programs&rdquo; is a homepage bullet without a shipped, priced offering behind it.</li>
+          </ul></div>
+        </div>
+        <div class="move"><span class="mtag">One-week move</span>
+          <p>Draft the Alumni Membership tier one-pager (D1 tier + NFL tier). Publish a three-tier sponsor package with a rate card. Route the NIL Program bullet to a shipping owner with a two-week deliverable clock.</p>
+          <span class="signal"><b>Success signal</b> &mdash; by quarter-end, at least one dollar of recurring revenue rides underneath the event calendar that did not exist at intake.</span>
+        </div>
+      </div>
+
+      <!-- Pillar 04 -->
+      <div class="pillar">
+        <div class="pillar-head">
+          <div class="ph-left"><span class="ph-num">Pillar 04 &middot; Receipts, media, story</span><h3>Content &amp; Credibility</h3></div>
+          <div class="ph-score">68<small>/ 100</small></div>
+        </div>
+        <div class="eg-grid">
+          <div class="eg-col ev"><h4>Evidence</h4><ul>
+            <li>Nineteen-year track record with 500+ NFL alumni and 4,000+ D1 commits &mdash; bank-vault-level credibility.</li>
+            <li>Nineteen years of on-field footage from every event, held in Pylon's archive.</li>
+            <li>Public alumni list acknowledges names but does not surface them as a searchable, indexable asset.</li>
+          </ul></div>
+          <div class="eg-col gap"><h4>Gap to 80</h4><ul>
+            <li>Content velocity trails Red Zone Elite, which ships branded national media on every event across 25+ venues.</li>
+            <li>The alumni-callback story &mdash; resurfacing 5&ndash;10 year old clips of NFL players on NFL Sundays &mdash; is not being told publicly.</li>
+            <li>No annual &ldquo;State of the Pipeline&rdquo; report exists; the story only Pylon can tell isn't being told.</li>
+            <li>The Pylon Wall (searchable alumni database) is not published; the strongest content asset in youth football is sitting idle.</li>
+          </ul></div>
+        </div>
+        <div class="move"><span class="mtag">One-week move</span>
+          <p>Ship the first NFL Sunday alumni resurface post &mdash; one 5&ndash;10 year old Pylon clip of an NFL player active this week. Publish across regional channels simultaneously; repeat weekly through the NFL season.</p>
+          <span class="signal"><b>Success signal</b> &mdash; every NFL Sunday carries a Pylon alumni resurface post, and at least one alum reshares it within the first month.</span>
+        </div>
+      </div>
+
+      <!-- Pillar 05 -->
+      <div class="pillar">
+        <div class="pillar-head">
+          <div class="ph-left"><span class="ph-num">Pillar 05 &middot; Market, playbook, expansion</span><h3>Growth Readiness</h3></div>
+          <div class="ph-score">52<small>/ 100</small></div>
+        </div>
+        <div class="eg-grid">
+          <div class="eg-col ev"><h4>Evidence</h4><ul>
+            <li>Product-line expansion into girls flag, camps, showcases, NIL, and international shows growth ambition.</li>
+            <li>National five-territory footprint gives distribution reach few competitors can match at launch.</li>
+            <li>Existing infrastructure could support new vertical launches without a ground-up rebuild.</li>
+          </ul></div>
+          <div class="eg-col gap"><h4>Gap to 80</h4><ul>
+            <li>Growth is reactive &mdash; competitors expanded into flag and NIL, so Pylon expanded &mdash; rather than moving by playbook.</li>
+            <li>Girls flag has a 2028 Los Angeles Olympics tailwind; Pylon announced it but shows no visible dominant-position investment plan.</li>
+            <li>The alumni graph &mdash; the single highest-leverage untapped asset &mdash; is not organized as a growth surface.</li>
+            <li>No visible market-intelligence function or research-brief cadence informing expansion decisions.</li>
+          </ul></div>
+        </div>
+        <div class="move"><span class="mtag">One-week move</span>
+          <p>Name a Girls Flag Program owner with a four-year (through-2028) roadmap due in two weeks. Name an Alumni Graph owner with a two-week roadmap. Both report weekly to the Chief of Staff.</p>
+          <span class="signal"><b>Success signal</b> &mdash; two named owners, two dated roadmaps, and a weekly report line. Expansion moves by plan, not by reaction.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 -->
+    <section>
+      <div class="sec-num">Section <b>03</b> &middot; Weakest pillar</div>
+      <h2>Revenue Architecture: 48/100.</h2>
+      <p>The pillar that most limits Pylon's separation from competitors is not brand, not content, not operations. It's the money model. Pylon is running a 19-year-old event business without a subscription layer beneath it, and without monetized use of the deepest asset in the organization.</p>
+      <div class="dd-block"><h4>What's there</h4>
+        <p>Tournament fees and regional league fees drive the P&amp;L. Multiple products (7v7, camps, flag, showcases, NIL) diversify the event mix. Sponsor mentions appear across regional pages. The transactional infrastructure works.</p>
+      </div>
+      <div class="dd-block"><h4 class="miss">What's missing</h4>
+        <p>Three things. First, no subscription flywheel &mdash; every dollar Pylon collects comes from a one-time event registration or a one-time sponsor deal; no recurring revenue rides underneath the event calendar. Second, no published sponsor package structure &mdash; deals appear to be negotiated one at a time, which caps deal velocity and inflates negotiation cost per dollar. Third, and biggest: <b>4,500+ alumni contacts are sitting unmonetized.</b> An NFL alum whose career Pylon helped launch has no formal way to buy back in, refer athletes, or activate against Pylon's youth pipeline in a revenue-share structure.</p>
+      </div>
+      <div class="dd-block"><h4>Why this pillar loses to competitors</h4>
+        <p>Red Zone Elite runs on tournament fees too, but its national media coverage and ranking layer sell sponsor packages at scale. PremierEventsUSA layered a player-card partnership on top of fees, creating a per-athlete recurring line. Midwest BOOM landed an apparel sponsor with an annual value that dwarfs individual event revenue. Pylon has assets bigger than any of these organizations own &mdash; and is still monetizing at the event-fee layer.</p>
+      </div>
+      <div class="dd-block"><h4>What fixes it</h4>
+        <p style="color:var(--gold);font-weight:600;">The alumni graph. Detailed in Section 04.</p>
+      </div>
+    </section>
+
+    <!-- 04 -->
+    <section>
+      <div class="sec-num">Section <b>04</b> &middot; Cross-pillar move</div>
+      <h2>The alumni graph.</h2>
+      <p>One asset fixes two pillars simultaneously: Revenue Architecture (Pillar 03) and Content &amp; Credibility (Pillar 04). Building it also strengthens Brand Identity (Pillar 01) and Growth Readiness (Pillar 05) as a second-order effect. Cross-pillar moves are rare in Foundation Score practice. This is one.</p>
+      <p>The alumni graph ships as three products under one asset.</p>
+
+      <div class="prod">
+        <span class="pnum">1</span><h3>The Pylon Wall</h3>
+        <p>Public, searchable database of every athlete who came through 19 years of Pylon events. Filter by year, position, region, and current level (HS, D1, NFL). Every profile links to game clips, current-team logo, and social handles.</p>
+        <span class="fixes">Fixes &middot; Content &amp; Credibility &middot; Brand Identity</span>
+      </div>
+      <div class="prod">
+        <span class="pnum">2</span><h3>State of the Pipeline</h3>
+        <p>Annual report. Pylon alumni in the College Football Playoff, the NFL Draft, first-round picks, All-American teams, All-Pro selections. A story only Pylon can tell &mdash; because only Pylon has the 19-year dataset.</p>
+        <span class="fixes">Fixes &middot; Content &amp; Credibility &middot; Growth Readiness</span>
+      </div>
+      <div class="prod">
+        <span class="pnum">3</span><h3>Alumni Membership</h3>
+        <p>Paid tier for D1 alumni and NFL alumni. Revenue share on youth programs their names bring in. Access to a private alumni network. Speaker and clinic opportunities. Formal on-ramp to becoming a Pylon ambassador.</p>
+        <span class="fixes">Fixes &middot; Revenue Architecture &middot; Growth Readiness</span>
+      </div>
+
+      <div class="separator-note">
+        <h4>Why it separates 2026</h4>
+        <p>Red Zone Elite cannot build this &mdash; it's four years old. 7v7 Elite cannot build this &mdash; it's a rankings layer without the pipeline depth. PremierEventsUSA cannot build this &mdash; it doesn't have the alumni. This is the one asset Pylon can build that no competitor can copy without waiting fifteen years.</p>
+        <span class="diff">Positioning &middot; Different, not better</span>
+      </div>
+    </section>
+
+    <!-- 05 -->
+    <section>
+      <div class="sec-num">Section <b>05</b> &middot; Two-week ship list</div>
+      <h2>What ships by August 1.</h2>
+      <p class="ship-intro">Every item has a named owner and a numeric done-when threshold. No item is &ldquo;in progress&rdquo; &mdash; items are either shipped or not.</p>
+
+      <div class="ship"><div class="snum">01</div><div class="sbody">
+        <strong>Homepage hero rewrite</strong>
+        <p>Replace the opening line with the alumni receipt. Ban &ldquo;premier&rdquo; and &ldquo;elite.&rdquo; One primary CTA (Register / Join the Wall).</p>
+        <div class="smeta"><span class="chip owner">Owner &middot; Content Strategist</span><span class="chip done">&le;12 words</span><span class="chip done">Mobile load &le;2s</span></div>
+      </div></div>
+      <div class="ship"><div class="snum">02</div><div class="sbody">
+        <strong>NFL Sunday alumni resurface &mdash; first drop</strong>
+        <p>Pull one 5&ndash;10 year old Pylon clip of an NFL player active this Sunday. Publish across all five regional channels simultaneously. Repeat weekly through the NFL season.</p>
+        <div class="smeta"><span class="chip owner">Owner &middot; Weekly Producer</span><span class="chip done">Publish Sunday 10am</span><span class="chip done">5 / 5 regions</span></div>
+      </div></div>
+      <div class="ship"><div class="snum">03</div><div class="sbody">
+        <strong>Alumni Membership one-pager</strong>
+        <p>Draft the tier structure (D1 tier + NFL tier), pricing, benefits, and revenue-share mechanics. Ships as a decision document, not a launch page.</p>
+        <div class="smeta"><span class="chip owner">Owner &middot; CFO</span><span class="chip done">Decision-shaped</span><span class="chip done">Pricing set</span></div>
+      </div></div>
+      <div class="ship"><div class="snum">04</div><div class="sbody">
+        <strong>Sponsor package rate card</strong>
+        <p>Three tiers (Founding, Platinum, Gold) with published rates, deliverables, and inventory. First rate card in Pylon's history.</p>
+        <div class="smeta"><span class="chip owner">Owner &middot; CFO</span><span class="chip done">Per-tier deliverables</span><span class="chip done">Signable Q4</span></div>
+      </div></div>
+      <div class="ship"><div class="snum">05</div><div class="sbody">
+        <strong>Regional Monday brief pilot</strong>
+        <p>One of five regions pilots the weekly rhythm. Monday brief &le;300 words, Friday close-out &le;200 words. Chief of Staff routes.</p>
+        <div class="smeta"><span class="chip owner">Owner &middot; Chief of Staff</span><span class="chip done">1 region</span><span class="chip done">2 / 2 weeks</span></div>
+      </div></div>
+      <div class="ship"><div class="snum">06</div><div class="sbody">
+        <strong>Pylon Wall v0 &mdash; data audit</strong>
+        <p>Compile the master roster: every athlete across 19 years, current status where retrievable. Not the site build &mdash; the dataset the site will read from.</p>
+        <div class="smeta"><span class="chip owner">Owner &middot; Research Assistant</span><span class="chip done">&ge;85% completeness</span><span class="chip done">Schema locked</span></div>
+      </div></div>
+    </section>
+
+    <!-- 06 -->
+    <section>
+      <div class="sec-num">Section <b>06</b> &middot; Six-week horizon</div>
+      <h2>The Foundation Playbook, adapted.</h2>
+      <p>The standard TOJ Six-Week Foundation Playbook re-shapes to the client's weakest pillars. For Pylon, the order runs revenue-first &mdash; because Revenue Architecture is the pillar holding the rest down.</p>
+      <table class="tr-table">
+        <thead><tr><th>Week</th><th>Pillar</th><th>The move</th></tr></thead>
+        <tbody>
+          <tr><td class="wk">Wk 1</td><td class="pl">Brand Identity</td><td>Homepage receipt-line rewrite live. &ldquo;Premier/elite&rdquo; retired from the hero.</td></tr>
+          <tr><td class="wk">Wk 2</td><td class="pl">Operational Health</td><td>Monday-brief / Friday-close cadence installed in the pilot region. Chief-of-Staff role named.</td></tr>
+          <tr><td class="wk">Wk 3</td><td class="pl">Revenue Architecture</td><td>Alumni Membership one-pager + sponsor rate card shipped as decision documents.</td></tr>
+          <tr><td class="wk">Wk 4</td><td class="pl">Content &amp; Credibility</td><td>NFL Sunday resurface cadence running. Pylon Wall v0 dataset audited and schema-locked.</td></tr>
+          <tr><td class="wk">Wk 5</td><td class="pl">Growth Readiness</td><td>Girls Flag four-year (through-2028) roadmap owner named. Alumni Graph owner named.</td></tr>
+          <tr><td class="wk">Wk 6</td><td class="pl">Measurement &amp; governance</td><td>Re-score the Foundation. Name the next weakest pillar. Set the audit cadence that runs it back.</td></tr>
+        </tbody>
+      </table>
+
+      <div class="close-box">
+        <div class="first-fix"><h4>The one thing to fix first</h4><p style="margin:0;color:var(--ink-soft);font-size:0.9rem;">Revenue Architecture, through the alumni graph. It is the weakest pillar and the highest-leverage asset in the same move.</p></div>
+        <div class="worked"><h4>How you'll know it worked</h4><p style="margin:0;color:var(--ink-soft);font-size:0.9rem;">By the end of the six weeks: one recurring revenue line rides underneath the event calendar, one sponsor rate card is signable, every NFL Sunday carries a Pylon alumni resurface post, and the Pylon Wall dataset exists. When those four are true, Pylon has stopped competing on the layer where competitors caught up &mdash; and started building the one asset none of them can copy.</p></div>
+      </div>
+
+      <p class="kicker">Score the Foundation. Fix the weakest pillar.<br/>Everything else follows.</p>
+    </section>
+
+    <footer class="doc-footer">
+      &copy; 2026 Trail of Joy Management Group, LLC &middot; Prepared under the Pylon &times; TOJ partnership.
+      <div class="fnote">This transcript is a diagnostic instrument, not a representation or warranty of results. Scores reflect externally observable evidence as of the issue date and are subject to &plusmn;10-point refinement on full internal intake.</div>
+    </footer>
+
+  </article>
+</body>
+</html>
